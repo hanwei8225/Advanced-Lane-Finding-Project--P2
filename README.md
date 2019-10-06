@@ -31,7 +31,6 @@
 [image13]: ./output_images/result.png
 [image14]: ./output_images/fit.png
 
-
 [video1]: ./project_video.mp4 
 [video2]: ./output_images/project_video.mp4
 [video3]: ./output_images/project_video_outing.mp4
@@ -165,18 +164,18 @@ dst = np.float32([[ 205,720],[ 205,235],[1100,235],[1100,720]])
 
 ### 第一次处理
 
-![alt text][video2]
+[video2]
 可以看到在复杂的地形检测车道会出现问题，经过排查，发现是做投影的时候把车道投影太宽了，导致弯道的时候会有一侧的车道线超出屏幕，在调整了投影参数后，进行了第二次处理：
 
 ### 第二次处理
-![alt text][video4]
+[video4]
 
 第二次处理的结果比第一次好不少，但是在有一些干扰的情况下还是会出现个别帧检测失败的问题。
 
 ### 第三次处理
 这次进行了一些尝试，之前的检测失败的问题的产生原因是车道线有一侧是断掉的，有时候像素过少就会拟合不准确。
 但是我们知道车道线是平行的，因此我选择检测到的像素更多的一侧作为基准，另一侧只是将基准侧进行平移后得到，进行测试后相对较好，但是也有可能会产生更多的未知问题
-![alt text][video4]
+[video4]
 
 ---
 
