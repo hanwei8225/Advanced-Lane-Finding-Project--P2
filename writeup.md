@@ -18,9 +18,9 @@
 
 [image1]: ./output_images/usdistorted_image.png
 [image2]: ./output_images/abs_sobel_x_y.png
-[image3]: ./output_images/mag and dir.png
+[image3]: ./output_images/mag_and_dir.png
 [image4]: ./output_images/combined_gradient.png
-[image5]: ./output_images/hls and bgr.png
+[image5]: ./output_images/hls_and_bgr.png
 [image6]: ./output_images/combined_color.png
 [image7]: ./output_images/combined.png
 [image8]: ./output_images/masked.png
